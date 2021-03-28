@@ -100,6 +100,74 @@
         padding: 30px;
     }
 
+    header {
+        height: 65px;
+        width: 100%;
+        background-color: rgb(16, 52, 59);
+        position: fixed;
+        z-index: 10;
+    }
+
+    header .container {
+        padding: 5px 30px;
+    }
+
+    .header-left {
+        float: left;
+        padding-top: 15px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #menu li a {
+        display: none;
+    }
+
+    .top-wrapper {
+        padding: 130px 0 100px 0;
+        background-image: url('./images/genie-bg.jpg');
+        background-size: cover;
+        color: white;
+        text-align: left;
+        height: 100vh;
+        background-position: center;
+        text-align: center;
+    }
+
+    .top-wrapper h1 {
+        font-size: 25px;
+    }
+
+    .top-wrapper .btn-wrapper {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    .top-wrapper .btn-wrapper {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .top-wrapper .btn-wrapper p {
+        margin: 10px 0;
+    }
+
+    .more {
+        background: #093b28;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px rgb(44, 44, 44);
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+
+    /* Services */
+
     .lesson-wrapper .lesson {
         width: 100%;
         margin-bottom: 50px;
