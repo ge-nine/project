@@ -22,6 +22,106 @@ body {
     width: 100%;
 }
 
+/* Header */
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(16, 52, 59);
+    position: fixed;
+    z-index: 10;
+}
+
+header .container {
+    padding: 5px 100px;
+}
+
+.header-left {
+    float: left;
+    padding-top: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-right,
+#menu li {
+    margin-top: 5px;
+    padding-top: 0;
+    position: relative;
+    transition: all 0.5s;
+}
+
+#menu li {
+    list-style: none;
+    float: right;
+}
+
+#menu li a {
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+#menu li a:hover {
+    background-color: rgba(55, 169, 184, 0.3);
+}
+
+.top-wrapper {
+    padding: 130px 0 100px 0;
+    background-image: url('./images/genie-bg.jpg');
+    background-size: cover;
+    color: white;
+    text-align: left;
+    height: 100vh;
+}
+
+.top-wrapper h1 {
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.top-wrapper p {
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: rgb(10, 10, 10);
+}
+
+.top-wrapper .btn-wrapper {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.top-wrapper .btn-wrapper p {
+    margin: 10px 0;
+}
+
+.top-wrapper .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.more {
+    background: #093b28;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgb(44, 44, 44);
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* Layanan */
 
 .lesson-wrapper {
@@ -31,7 +131,7 @@ body {
 }
 
 .lesson-wrapper .container {
-    padding: 60px 100px;
+    padding: 80px 100px 50px 100px;
 }
 
 .lesson-wrapper .heading {
@@ -60,19 +160,18 @@ body {
 }
 
 .lesson-wrapper .lesson-icon {
-    position: relative;
     text-align: center;
 }
 
 .lesson-wrapper .lesson-icon img {
-    height: 110px;
-    margin-bottom: 10px;
+    height: 90px;
+    margin-bottom: 5px;
 }
 
 .lesson-wrapper .text-contents {
     width: 80%;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 15px;
     color: #b3aeb5;
 
@@ -214,16 +313,22 @@ textarea {
 }
 
 .contact-submit:hover {
-    color: green;
-    background-color: black;
-    cursor: pointer;
+    opacity: 0.75;
+}
+
+.contact-submit:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
 
 .contact-submit {
-    background-color: green;
+    background-color: #5dca88;
     color: white;
-    width: 30%;
+    width: 200px;
     border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px -5px #1a7940;
     transition: all 0.5s;
 }
 
@@ -236,7 +341,7 @@ textarea {
 .footer {
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #2F4F4F;
+    background-color: rgb(16, 52, 59);
     color: #fff;
     height: 220px;
     text-align: center;
